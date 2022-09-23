@@ -1,0 +1,126 @@
+.image {
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    height: 400px;
+    width: 500px;
+    box-shadow: rgba(135, 135, 135, 0.604) 0px 20px 30px 10px;
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 30%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.intro>:nth-child(1) {
+    font-size: 50px;
+    width: 50%;
+}
+.intro>:nth-child(2) {
+    font-size: 60px;
+    width: 30%;
+}
+.sale {
+    position: absolute;
+    background-color: #f9ff81;
+    width: 200px;
+    height: 10px;
+    margin-top: 7.5rem;
+    margin-left: 34rem;
+}
+.side {
+    position: absolute;
+    background-color:var(--orange);
+    width: 20px;
+    height: 180px;
+    margin-top: 41rem;
+    margin-right: 52rem;
+}
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -3rem;
+    height: 105rem;
+    width: 70rem;
+}
+.Post {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    width: 50%;
+    height: 35%;
+    position: absolute;
+    margin-top:58rem;
+    border-bottom: 9px solid var(--blue);
+    padding: 1rem 1rem 1rem 1rem;
+}
+.store {
+    bottom:-40rem;
+    left: 15rem;
+    position: absolute;
+    width: 20%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.store>:nth-child(1) {
+    width: 80px;
+}
+.store>:nth-child(2) {
+    font-size: 20px;
+}
+.Slides {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    margin-top: 15rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.slide1 {
+    width: 250px;
+    height: 200px;
+    transition: 0.2s;
+    box-shadow: rgba(135, 135, 135, 0.604) 0px 20px 30px 10px;
+}
+.slide1:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+    .Post {
+      width: 100%;
+      padding: 1rem;
+    }
+    .container {
+        width: 100%;
+        background-color: white;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: -3rem;
+        height: 70rem;
+        padding: 1rem;
+      }
+      .image {
+        margin-top: -5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        width: 90%;
+        height: 30%;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
