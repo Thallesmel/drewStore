@@ -1,31 +1,31 @@
 .nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 2rem 2rem 2rem 3rem;
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 5rem;
-    box-shadow: 2px 4px 8px 2px #3232324c;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 2rem 2rem 2rem 3rem;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 2px 4px 8px 2px #3232324c;
 }
-.nav >h1 {
-    color: var(--blue);
-    transition: 0.1s ease-in;
+.nav > h1 {
+  color: var(--blue);
+  transition: 0.1s ease-in;
 }
-.nav >h1:hover {
-    color: var(--orange)
+.nav > h1:hover {
+  color: var(--orange);
 }
 .img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 @media screen and (max-width: 768px) {
-    .nav {
-      width: 100%;
-      padding: 1rem;
-    }
+  .nav {
+    width: 100%;
+    padding: 1rem;
   }
+}

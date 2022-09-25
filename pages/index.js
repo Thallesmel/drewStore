@@ -1,4 +1,3 @@
-
 import { GraphQLClient, gql } from 'graphql-request';
 import { Intro } from '../components/Intro';
 import { NavBar } from '../components/NavBar';
@@ -44,22 +43,21 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-
   return (
     <main className='Home'>
-      <NavBar/>
+      <NavBar />
       <div className='Posts'>
-      <Intro/>
-      {posts.map((post) => (
-        <PostCard
-          mainPhoto={post.mainphoto.url}
-          title={post.title}
-          price={post.price}
-          slug={post.slug}
-          storeName={post.store.avatarName}
-          storePhoto={post.store.avatarPhoto.url}
-        />
-      ))}
+        <Intro />
+        {posts.map((post) => (
+          <PostCard
+            mainPhoto={post.mainphoto.url}
+            title={post.title}
+            price={post.price}
+            slug={post.slug}
+            storeName={post.store.avatarName}
+            storePhoto={post.store.avatarPhoto.url}
+          />
+        ))}
       </div>
     </main>
   );

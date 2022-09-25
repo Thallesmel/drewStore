@@ -60,7 +60,6 @@ export async function getStaticProps({ params }) {
   };
 }
 
-
 export default function PostPage({ post }) {
   return (
     <main className={styles.Post}>
@@ -91,9 +90,8 @@ export default function PostPage({ post }) {
           <h6>{post.store.avatarName}</h6>
         </div>
         <div className={styles.Slides}>
-          {
-            post.images.map((url) => (
-              <div
+          {post.images.map((url) => (
+            <div
               className={styles.slide1}
               style={{
                 backgroundImage: `url(${url.url})`,
@@ -103,8 +101,7 @@ export default function PostPage({ post }) {
                 borderRadius: '10px',
               }}
             />
-            ))
-          }
+          ))}
         </div>
       </div>
     </main>

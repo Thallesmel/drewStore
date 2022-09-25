@@ -22,10 +22,10 @@ const PostCard = ({ mainPhoto, title, price, slug, storeName, storePhoto }) => {
           <div className={styles.contains}>
             <h5>{title}</h5>
             <h2>{price}</h2>
-            </div>
-            <div className={styles.store}>
-              <img src={storePhoto} alt='' />
-              <h6>{storeName}</h6>
+          </div>
+          <div className={styles.store}>
+            <img src={storePhoto} alt='' />
+            <h6>{storeName}</h6>
           </div>
         </div>
       </Link>
